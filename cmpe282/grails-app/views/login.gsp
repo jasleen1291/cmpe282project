@@ -1,5 +1,5 @@
 <link class="cssdeck" rel="stylesheet"
-	href="http:/cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css"> </g:link>
+	href="http:/cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css"> 
 <link rel="stylesheet"
 		href="http:/cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css"
 		class="cssdeck"> 

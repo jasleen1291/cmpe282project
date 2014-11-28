@@ -17,7 +17,7 @@ hibernate {
 environments {
     development {
         dataSource {
-            dbCreate = "validate" // one of 'create', 'create-drop', 'update', 'validate', ''
+            dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
             url = "jdbc:mysql://cmpe282.ccf8cucrxshq.us-east-1.rds.amazonaws.com:3306/shubhamawsdb"
 			driverClassName = "com.mysql.jdbc.Driver"
 			username = "root"

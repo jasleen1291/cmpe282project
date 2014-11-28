@@ -1,5 +1,8 @@
 package cmpe282
 
+import grails.rest.*
+@Resource(uri='/userdata')
+
 class Userdata {
    
 	String username
