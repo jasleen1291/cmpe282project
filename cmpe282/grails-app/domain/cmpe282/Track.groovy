@@ -10,7 +10,7 @@ class Track {
 	
 	static mapping = {
 		version false
-		table trackrecommendation
+		table "trackrecommendation"
 		}
     static constraints = {
     }

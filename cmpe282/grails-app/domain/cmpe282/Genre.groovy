@@ -10,7 +10,7 @@ class Genre {
 	
 	static mapping = {
 		version false
-    	table genrerecommendation
+    	table "genrerecommendation"
 		}
     static constraints = {
     }

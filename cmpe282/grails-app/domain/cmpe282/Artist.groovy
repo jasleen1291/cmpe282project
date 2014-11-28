@@ -9,7 +9,7 @@ class Artist {
 	
 	static mapping = {
 		version false
-		table artistrecommendation1
+		table "artistrecommendation1"
 		}
     static constraints = {
     }
