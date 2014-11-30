@@ -6,11 +6,12 @@ import grails.rest.*
 class Track {
 	Integer userid
 	Integer itemid
-	Integer rating
+	Double rating
 	
 	static mapping = {
 		version false
 		table "trackrecommendation"
+		id generator: 'assigned', name:'userid'
 		}
     static constraints = {
     }

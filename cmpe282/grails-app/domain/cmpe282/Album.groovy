@@ -6,12 +6,12 @@ import grails.rest.*
 class Album {
     Integer userid
 	Integer itemid
-	Integer rating
+	Double rating
 	
 	static mapping = {
 		version false
-		id false
-    	table "albumrecommendation"
+		table "albumrecommendation"
+		id generator: 'assigned', name:'userid'
 		}
     static constraints = {
 		

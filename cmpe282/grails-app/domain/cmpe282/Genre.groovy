@@ -6,11 +6,12 @@ import grails.rest.*
 class Genre {
     Integer userid
 	Integer itemid
-	Integer rating
+	Double rating
 	
 	static mapping = {
 		version false
     	table "genrerecommendation"
+		id generator: 'assigned', name:'userid'
 		}
     static constraints = {
     }
