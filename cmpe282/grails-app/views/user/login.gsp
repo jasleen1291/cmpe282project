@@ -52,7 +52,7 @@
 						</g:form>
 					</div>
 					<div class="tab-pane fade" id="create">
-						<g:form url="[controller:'User',action:'register']" class="form-horizontal" action='' method="POST" id="tab">
+						<g:form url="[controller:'User',action:'register']" class="form-horizontal" method="POST" id="tab">
 							<label>Username</label> 
 								<g:textField type="text" id="username" name="username" class="input-xlarge"/>
 								 <label>First Name</label>

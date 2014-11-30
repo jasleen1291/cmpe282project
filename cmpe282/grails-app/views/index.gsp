@@ -54,10 +54,10 @@
 					<li><g:link controller="User" action="logout">Logout</g:link></li>
 					</g:if>
 					<g:else>
-	 				 <li class="active"><g:link controller="User" action="login">Login</g:link></li>
-	 				
+					<li><g:link controller="User" action="register">Register</g:link></li>
+					<li class="active"><g:link controller="User" action="login">Login</g:link></li>
 				    </g:else>
-					<li><a href="#">Logout</a></li>
+					
 					<li><img style="margin: 10px" src="cart.png" widtd="31"
 						height="27"> </img></li>
 				</ul>
