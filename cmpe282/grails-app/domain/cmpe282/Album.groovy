@@ -10,8 +10,10 @@ class Album {
 	
 	static mapping = {
 		version false
+		id false
     	table "albumrecommendation"
 		}
     static constraints = {
+		
     }
 }
