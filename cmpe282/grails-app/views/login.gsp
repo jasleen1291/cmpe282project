@@ -16,7 +16,7 @@
 				</ul>
 				<div id="myTabContent" class="tab-content">
 					<div class="tab-pane active in" id="login">
-						<form class="form-horizontal" action='' method="POST">
+						<g:form url="[controller:'User',action:'authenticate']" class="form-horizontal" action='' method="POST">
 							<fieldset>
 								<div id="legend">
 									<legend class="">Login</legend>
@@ -25,8 +25,9 @@
 									<!-- Username -->
 									<label class="control-label" for="username">Username</label>
 									<div class="controls">
-										<input type="text" id="username" name="username"
-											placeholder="" class="input-xlarge">
+										
+											
+									<g:textField type="text" id="username" name="username" class="input-xlarge"/>
 									</div>
 								</div>
 
@@ -34,8 +35,9 @@
 									<!-- Password-->
 									<label class="control-label" for="password">Password</label>
 									<div class="controls">
-										<input type="password" id="password" name="password"
-											placeholder="" class="input-xlarge">
+										
+										<g:passwordField  name="password" id="password" name="password"
+											placeholder="" class="input-xlarge"/>
 									</div>
 								</div>
 
@@ -43,26 +45,30 @@
 								<div class="control-group">
 									<!-- Button -->
 									<div class="controls">
-										<button class="btn btn-success">Login</button>
+										<g:submitButton value="Login" name="Login" class="btn btn-success"/>
 									</div>
 								</div>
 							</fieldset>
-						</form>
+						</g:form>
 					</div>
 					<div class="tab-pane fade" id="create">
-						<form id="tab">
-							<label>Username</label> <input type="text" value=""
-								class="input-xlarge"> <label>First Name</label> <input
-								type="text" value="" class="input-xlarge"> <label>Last
-								Name</label> <input type="text" value="" class="input-xlarge"> <label>Email</label>
-							<input type="text" value="" class="input-xlarge"> <label>Address</label>
-							<textarea value="Smith" rows="3" class="input-xlarge">
-						</textarea>
-
+						<g:form url="[controller:'User',action:'register']" class="form-horizontal" action='' method="POST" id="tab">
+							<label>Username</label> 
+								<g:textField type="text" id="username" name="username" class="input-xlarge"/>
+								 <label>First Name</label>
+								<g:textField type="text" id="fname" name="fname" class="input-xlarge"/>
+								 <label>Last Name</label> 								
+								<g:textField type="text" id="lname" name="lname" class="input-xlarge"/>
+ 						<label>Email</label>
+						<g:textField type="text" id="email" name="email" class="input-xlarge"/>
+ 							<label>Address</label>
+						<g:textField type="text" id="address" name="address" class="input-xlarge"/>
+				<g:passwordField  name="password" id="password" name="password"
+											placeholder="" class="input-xlarge"/>
 							<div>
-								<button class="btn btn-primary">Create Account</button>
+							<g:submitButton value="create" name="Create Account" class="btn btn-primary"/>
 							</div>
-						</form>
+						</g:form>
 					</div>
 				</div>
 			</div>
