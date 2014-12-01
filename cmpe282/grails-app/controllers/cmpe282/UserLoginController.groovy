@@ -17,7 +17,7 @@ class UserLoginController {
 			session.user = s
 			
 			
-			def display = Indexdata.find()
+			def display = Indexdata.findAll()
 			println display
 			redirect (uri:"/")
 			
