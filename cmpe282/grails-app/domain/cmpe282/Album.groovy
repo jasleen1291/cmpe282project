@@ -12,6 +12,7 @@ class Album {
 		version false
 		table "albumrecommendation"
 		id generator: 'assigned', name:'userid'
+		//
 		}
     static constraints = {
 		
