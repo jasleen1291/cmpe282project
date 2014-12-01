@@ -8,23 +8,30 @@ class UserLoginController {
     def index() { 
 		
 	}
-
 	def login = {
 		//validate student login
 		println params.username
 		def s = Userdata.findByUsername(params.username)
 		if (s) {
 			// username and password match -> log in
-			session.username = s
-			redirect(uri:'/')
-			//redirect(controller:'main')
-		
+			session.user = s
 			
+			
+			def display = Indexdata.find()
+			println display
+			redirect (uri:"/")
+			
+			//redirect(controller:'main')
+					
 		} else {
 		
 			render (view : "login")
 			
 		}
 	}
+	def logout ={
+		session.user = null
+		redirect (uri:"/")
+		}
 	
 	}

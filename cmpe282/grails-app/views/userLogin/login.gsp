@@ -1,8 +1,24 @@
-<link class="cssdeck" rel="stylesheet"
-	href="http:/cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css"> 
-<link rel="stylesheet"
-		href="http:/cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css"
-		class="cssdeck"> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="widtd=device-widtd, initial-scale=1">
+<meta name="description" content="">
+<meta name="autdor" content="">
+
+<link rel="stylesheet" type="text/css"
+	href="<g:createLinkTo dir='jquery' file='jRating.jquery.css'/>"
+	media="screen" />
+<title>Shop Homepage - Start Bootstrap Template</title>
+
+		
+<link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.min.css')}" type="text/css">
+<link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.css')}" type="text/css">
+		<link rel="stylesheet" href="${resource(dir: 'css', file: 'shop-homepage.css')}" type="text/css">
+		
+</head>
+<body>		
 	<div class="" id="loginModal">
 		<div class="modal-header">
 
@@ -78,3 +94,6 @@
 			src="http:/cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script class="cssdeck"
 			src="http:/cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+</div>
+</body>
+</html>			
