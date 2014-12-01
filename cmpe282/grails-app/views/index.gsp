@@ -44,12 +44,17 @@
 				<form style="float: left; margin: 10px">
 					<input type="text" id="search"></input>
 					<button type="submit" style="border: 0; background: transparent">
-						<img src="search.png" width="30" height="30" alt="submit" />
+						<img src="./search.png" width="30" height="30" alt="submit" />
 					</button>
 				</form>
 				<ul class="nav navbar-nav" style="float: right">
-					<li><a href="#">My Profile</a></li>
-					<li><a href="#">Logout</a></li>
+				<g:if test="${session?.user}">
+				<li><g:link controller="UserLogin" action="profile">Hi, ${session?.user.username} </g:link></li>
+					<li><g:link controller="UserLogin" action="logout">Logout</g:link></li>
+					</g:if>
+					<g:else>
+	 				 <li class="active"><g:link controller="UserLogin" action="login">Login</g:link></li>
+	 				 </g:else>
 					<li><img style="margin: 10px" src="cart.png" widtd="31"
 						height="27"> </img></li>
 				</ul>
