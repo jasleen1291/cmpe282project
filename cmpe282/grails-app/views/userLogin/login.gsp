@@ -16,7 +16,10 @@
 <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.min.css')}" type="text/css">
 <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.css')}" type="text/css">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'shop-homepage.css')}" type="text/css">
-		
+<g:javascript src = "jquery.js"></g:javascript>
+<g:javascript src = "bootstrap.js"></g:javascript>
+<g:javascript src = "bootstrap.min.js"></g:javascript>
+
 </head>
 <body>		
 	<div class="" id="loginModal">
@@ -68,19 +71,20 @@
 						</g:form>
 					</div>
 					<div class="tab-pane fade" id="create">
-						<g:form url="[controller:'User',action:'register']" class="form-horizontal" method="POST" id="tab">
+						<g:form url="[controller:'UserLogin',action:'register']" class="form-horizontal" method="POST" id="tab">
 							<label>Username</label> 
-								<g:textField type="text" id="username" name="username" class="input-xlarge"/>
+								<g:textField type="text" id="username" name="username" class="input-xlarge"/><br>
 								 <label>First Name</label>
-								<g:textField type="text" id="fname" name="fname" class="input-xlarge"/>
+								<g:textField type="text" id="fname" name="fname" class="input-xlarge"/><br>
 								 <label>Last Name</label> 								
-								<g:textField type="text" id="lname" name="lname" class="input-xlarge"/>
+								<g:textField type="text" id="lname" name="lname" class="input-xlarge"/><br>
  						<label>Email</label>
-						<g:textField type="text" id="email" name="email" class="input-xlarge"/>
+						<g:textField type="text" id="email" name="email" class="input-xlarge"/><br>
  							<label>Address</label>
-						<g:textField type="text" id="address" name="address" class="input-xlarge"/>
+						<g:textField type="text" id="address" name="address" class="input-xlarge"/><br>
+						<label>Password</label>
 				<g:passwordField  name="password" id="password" name="password"
-											placeholder="" class="input-xlarge"/>
+											placeholder="" class="input-xlarge"/><br>
 							<div>
 							<g:submitButton value="create" name="Create Account" class="btn btn-primary"/>
 							</div>

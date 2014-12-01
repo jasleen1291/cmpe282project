@@ -2,22 +2,25 @@
 <html lang="en">
 <head>
 
+<link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.min.css')}" type="text/css">
+<link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.css')}" type="text/css">
+<link rel="stylesheet" href="${resource(dir: 'css', file: 'shop-homepage.css')}" type="text/css">
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="widtd=device-widtd, initial-scale=1">
 <meta name="description" content="">
 <meta name="autdor" content="">
 
-<link rel="stylesheet" type="text/css"
-	href="<g:createLinkTo dir='jquery' file='jRating.jquery.css'/>"
-	media="screen" />
+<link rel="stylesheet" type="text/css" href="<g:createLinkTo dir='jquery' file='jRating.jquery.css'/>" media="screen" />
 <title>Shop Homepage - Start Bootstrap Template</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="<g:createLinkTo dir='css' file='style.css'/>" />
+
 <!-- Bootstrap Core CSS -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="<g:createLinkTo dir='css' file='bootstrap.min.css'/>" />
 <!-- Custom CSS -->
-<link href="<g:createLinkTo dir='css' file='shop-homepage.css'/>"
-	rel="stylesheet">
+<link href="<g:createLinkTo dir='css' file='shop-homepage.css'/>" rel="stylesheet">
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view tde page via file:// -->
 <!--[if lt IE 9]>
@@ -109,11 +112,12 @@
 		</div>
 		<!-- /.container -->
 		<!-- jQuery -->
-		<script src="js/jquery.js"></script>
-		<script type="text/javascript" src="jquery/jRating.jquery.js"></script>
-		<!-- Bootstrap Core JavaScript -->
-		<script src="js/bootstrap.min.js"></script>
-		<script src="jquery/jquery.tablesorter.pager.js"></script>
+		<script src="<g:createLinkTo dir='jquery' file='jquery.js'/>"></script>
+		<script src="<g:createLinkTo dir='jquery' file='jRating.jquery.js'/>"></script>
+		<script src="<g:createLinkTo dir='js' file='bootstrap.min.js'/>"></script>
+		<script src="<g:createLinkTo dir='jquery' file='jquery.tablesorter.pager.js'/>"></script>
+		
+		
 		<script>
          function getPaging(e,f)
          {
