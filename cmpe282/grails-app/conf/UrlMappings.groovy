@@ -8,7 +8,7 @@ class UrlMappings {
         }
 
         "/"(view:"/index")
-		"/login"(view:"/login")
+	//	"/cmpe282/userlogin"(view:"/user/login")
         "500"(view:'/error')
 	}
 }

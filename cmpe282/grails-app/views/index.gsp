@@ -55,7 +55,7 @@
 					</g:if>
 					<g:else>
 					<li><g:link controller="User" action="register">Register</g:link></li>
-					<li class="active"><g:link controller="User" action="login">Login</g:link></li>
+					<li class="active"><g:link controller="UserLogin" action="index">Login</g:link></li>
 				    </g:else>
 					
 					<li><img style="margin: 10px" src="cart.png" widtd="31"
