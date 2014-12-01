@@ -48,16 +48,8 @@
 					</button>
 				</form>
 				<ul class="nav navbar-nav" style="float: right">
-					
-					<g:if test="${session?.userid}">
-					<li><g:link controller="User" action="profile">Hi, ${session?.user.username} </g:link></li>
-					<li><g:link controller="User" action="logout">Logout</g:link></li>
-					</g:if>
-					<g:else>
-					<li><g:link controller="User" action="register">Register</g:link></li>
-					<li class="active"><g:link controller="UserLogin" action="index">Login</g:link></li>
-				    </g:else>
-					
+					<li><a href="#">My Profile</a></li>
+					<li><a href="#">Logout</a></li>
 					<li><img style="margin: 10px" src="cart.png" widtd="31"
 						height="27"> </img></li>
 				</ul>
@@ -80,12 +72,18 @@
 			<div class="col-md-9">
 				<table width="100%">
 					<tr style="padding: 20px; margin: 5px;" id="linearBg2">
-						<td class="head">Song Title</td>
+						<td class="head">Album</td>
 						<td class="head">Artist</td>
 						<td class="head">Rating</td>
-						<td class="head"></td>
+						<td class="head">Song</td>
 						<td class="head">Cost</td>
 					</tr>
+
+					 <ul>
+     					 <g:each in="${data}">
+       					 <li>${it.Album}</li><li>${it.Artist}</li><li>${it.Rating}</li><li>${it.Track}</li>
+      					</g:each>
+    					</ul>
 					<tr style="padding: 20px; margin: 5px;">
 						<td class="head">Song Title</td>
 						<td class="head">Artist</td>
@@ -184,8 +182,6 @@
 					</tr>
 
 				</table>
-				
-				
 				<nav class="pagination">
 					<a href="index.html" class="prev">&lt;</a> <a href="index.html">1</a>
 					<a href="index.html">2</a> <a href="index.html">3</a> <span>4</span>
