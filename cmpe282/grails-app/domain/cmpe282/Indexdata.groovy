@@ -3,16 +3,17 @@ package cmpe282
 import controllers.cmpe282.*;
 	import grails.rest.*
 	
-	@Resource(uri='/indexdata')
+	@Resource(uri='/index')
 	class Indexdata {
-     String Album;
-	 String Artist;
+     String album;
+	 String artist;
 	 String Track;
-	 int Rating;
+	 int rating;
 		
 		static mapping = {
 			version false
-			table "displayindex"
+			table 'displayindex'
+			id generator: 'assigned' , name: 'rating'
 			}
 		static constraints = {
 		}
